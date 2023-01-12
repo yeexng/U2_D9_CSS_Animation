@@ -1,0 +1,56 @@
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo-img{
+    width: 60px;
+  }
+
+.tapestry{
+    width: 60px;
+}
+
+.list-group{
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-wrapper{
+    position:relative;
+}
+
+.genre-badge{
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    border:none;
+    color: white;
+    width: 50px;
+    padding-left: 5px;
+}
+
+.tracklist-table{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.jumbotron{
+    background-image: url(https://images.unsplash.com/photo-1468164016595-6108e4c60c8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
