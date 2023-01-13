@@ -295,70 +295,118 @@
     <div class="col-12 text-center"><h3 id="tapestry">Album Tacklist</h3></div>
 
     <div class="container">
-        <div class="tracklist-table">
-
-            <table class="table table-striped ">
-                <thead>
-                    <tr>
-                        <th scope="col">Track</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Artist</th>
-                        <th scope="col">Duration</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Tears in Heaven</td>
-                        <td>Eric Clapton</td>
-                        <td>3.58 mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Always</td>
-                        <td>Bonjovi</td>
-                        <td>4.30 mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Knockin' on Heaven's Door</td>
-                        <td>Guns n Roses</td>
-                        <td>3.42mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Highway to Hell</td>
-                        <td>AC/DC</td>
-                        <td>3.46mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Please Forgive Me</td>
-                        <td>Bryan Adams</td>
-                        <td>4.28mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td>Layla</td>
-                        <td>Eric Clapton</td>
-                        <td>6.54mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td>Rains On me Tonight</td>
-                        <td>Phil Collins ft Eric Clapton</td>
-                        <td>5.48mins</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Knockin' on Heaven's Door</td>
-                        <td>Guns n Roses</td>
-                        <td>3.42mins</td>
-                    </tr>
-                </tbody>
-            </table>
+      <div class="tracklist-table">
+        
+        <table class="table table-striped ">
+          <thead>
+            <tr>
+              <th scope="col">Track</th>
+              <th scope="col">Title</th>
+              <th scope="col">Artist</th>
+              <th scope="col">Duration</th>
+            </tr>
+          </thead>
+          <tbody class="tracklist">
+            <tr>
+              <th scope="row">1</th>
+              <td>Tears in Heaven</td>
+              <td>Eric Clapton</td>
+              <td>3.58 mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Always</td>
+              <td>Bonjovi</td>
+              <td>4.30 mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Knockin' on Heaven's Door</td>
+              <td>Guns n Roses</td>
+              <td>3.42mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Highway to Hell</td>
+              <td>AC/DC</td>
+              <td>3.46mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Please Forgive Me</td>
+              <td>Bryan Adams</td>
+              <td>4.28mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Layla</td>
+              <td>Eric Clapton</td>
+              <td>6.54mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Rains On me Tonight</td>
+              <td>Phil Collins ft Eric Clapton</td>
+              <td>5.48mins</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Knockin' on Heaven's Door</td>
+              <td>Guns n Roses</td>
+              <td>3.42mins</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-box">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Add Track</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form class="row">
+                  <div class="form-group col-6">
+                    <label for="recipient-name" class="col-form-label">Track Number:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="message-text" class="col-form-label">Track Title:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="message-text" class="col-form-label">Artist Name:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="message-text" class="col-form-label">Duration:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+        
             
             <div class="row text-center mt-5 card-footer d-flex justify-content-center">
         <div class="col-12">Designed by Sam Ng</div>
@@ -370,9 +418,9 @@
       </div>
       </div>
 
-<script src="script.js"></script>    
-</script>
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="script.js"></script>    
 </body>
 </html>
